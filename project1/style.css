@@ -115,5 +115,50 @@ margin-bottom: 20px;
     padding-bottom: 60px;
    
 }
+.extra{
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
     
+.targetbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+    padding-bottom: 60px;
+}
+.col1{
+    background-color: #FF4C1E1A;
+    width: 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.col2{
+    background-color: #004CE81A;
+    width: 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.col3{
+    background-color: #FFDF001A;
+    width: 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.targetbox h6{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    margin: 10px;
+}
+.targetbox p{
+    font-size: 18px;
+    margin: 10px;
+}
+.targetbox a{
+    font-size: 18px;
+    margin: 10px;
+    color: black;
+}
     
