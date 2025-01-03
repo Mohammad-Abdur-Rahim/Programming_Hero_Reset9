@@ -5,7 +5,7 @@ function blogPage() {
 function goToHomepage() {
     window.location.href = '/index.html'; 
 }
-// Donate page function all here -------------------
+// Donate page function for Donate 1 ------------------------------------------START
 function getInputValue(id){
     const value = document.getElementById(id).value;
     const numberValue = parseFloat(value);
@@ -16,3 +16,9 @@ function getInputText(id){
     const numberValue = parseFloat(value);
     return(numberValue);
 }
+// textonly value receive function 
+function getInputTextonly(id){
+    const value = document.getElementById(id).innerText;
+    return(value);
+}
+// Donate page function for Donate 1 ------------------------------------------END

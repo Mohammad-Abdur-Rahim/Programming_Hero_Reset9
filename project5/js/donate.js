@@ -15,6 +15,14 @@
     const mainBalanceUpdateValue = mainBalance - donate1Value;
     document.getElementById('mainBalance').innerText = mainBalanceUpdateValue;
     // step: 4 Transaction History 
+    const titledonate1 =getInputTextonly('titledonate1');
+    const  newtransactionHistory = document.createElement('div');
+        newtransactionHistory.innerHTML =
+        `
+         <div class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
+                <p class="text-yellow-400 font-extrabold">${donate1Value} Taka ${titledonate1}</p>
+            </div>
+        `
+console.log(donate1Value,titledonate1);
 
-
-})
+});
