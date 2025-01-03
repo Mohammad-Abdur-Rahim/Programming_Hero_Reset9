@@ -1,11 +1,5 @@
-function historyPage(){
-    window.location.href ='/history.html'
-}
-function donationPage(){
-    window.location.href ='/index.html'
-}
-// page change on click
 
+// page change on click
 function blogPage() {
     window.location.href = '/Blog.html';
 }
