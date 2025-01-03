@@ -16,13 +16,22 @@
     document.getElementById('mainBalance').innerText = mainBalanceUpdateValue;
     // step: 4 Transaction History 
     const titledonate1 =getInputTextonly('titledonate1');
-    const  newtransactionHistory = document.createElement('div');
-        newtransactionHistory.innerHTML =
+    const  div = document.createElement('div');
+        div.innerHTML =
         `
          <div class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
                 <p class="text-yellow-400 font-extrabold">${donate1Value} Taka ${titledonate1}</p>
             </div>
-        `
-console.log(donate1Value,titledonate1);
+        `;
+        console.log(div);
+    console.log(titledonate1,donate1Value);
+           // Check if 'transactionContainer' exists before appending
+    const transactionContainer = document.getElementById('transactionContainer');
+    if (transactionContainer) {
+        transactionContainer.appendChild(div);
+    } else {
+        console.error("transactionContainer not found in the DOM");
+    }
+
 
 });
