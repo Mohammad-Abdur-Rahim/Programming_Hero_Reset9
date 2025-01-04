@@ -9,6 +9,7 @@ document.getElementById('donate1btn').addEventListener('click', function (e) {
     const plusDonat1UpdateValue = plusDonat1 + donate1Value;
     console.log('plusDonat1UpdateValue is :', plusDonat1UpdateValue);
     document.getElementById('plusDonat1').innerText = plusDonat1UpdateValue;
+
     // step: 3 Main Balance  - Calculation --------------------
     const mainBalance = getInputText('mainBalance');
     console.log('mainBalance is :', mainBalance);
@@ -20,11 +21,15 @@ document.getElementById('donate1btn').addEventListener('click', function (e) {
     section.innerHTML = `
            <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
             <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
-                <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">1.</span> ${donate1Value} and ${titledonate1}</p>
+                <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">1.</span> ${donate1Value} Taka is ${titledonate1}</p>
             </div>
+  
         </section>`;
     document.getElementById('transaction_Container').appendChild(section);
+    
+    alert(`Warring you Donate Money is : ${donate1Value} Taka`)
 });
+
 //Donate Section 1 -------------------------------------------------------------END
 //Donate Section 2 -------------------------------------------------------------START
 // step: 1  value is receive 
@@ -44,7 +49,7 @@ document.getElementById('donate2btn').addEventListener('click', function (e) {
     section.innerHTML = `
                <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
                 <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
-                    <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">2.</span> ${donate2Value} and ${titledonate2}</p>
+                    <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">2.</span> ${donate2Value} Taka is ${titledonate2}</p>
                     
                 </div>
                 
@@ -72,7 +77,7 @@ document.getElementById('donate3btn').addEventListener('click', function (e) {
     section.innerHTML = `
            <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
             <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
-                <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">1.</span> ${donate1Value} and ${titledonate1}</p>
+                <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">3.</span> ${donate3Value} Taka is ${titledonate3}</p>
                 
             </div>
             

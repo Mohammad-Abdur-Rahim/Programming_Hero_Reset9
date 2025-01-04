@@ -4,6 +4,7 @@ function getInputValue(id){
     const value = document.getElementById(id).value;
     const numberValue = parseFloat(value);
     if(numberValue >0 ){
+        
         return(numberValue);
     }
     else{
@@ -39,17 +40,21 @@ function showSectionById(id){
 document.getElementById('showDonateButton').addEventListener('click',function(){
     console.log("added ");
     showSectionById('donate-section')
+    this.classList.add('bgbtn');
+    document.getElementById('showHistoryButton').classList.remove('bgbtn');
 });
 
 document.getElementById('showHistoryButton').addEventListener('click',function(){
     console.log("added ");
     showSectionById('history-section')
-    // this.classList.add('bg-background');
+    this.classList.add('bgbtn');
+    document.getElementById('showDonateButton').classList.remove('bgbtn');
+ 
 });
 document.getElementById('showBlogButton').addEventListener('click',function(){
     console.log("added ");
     showSectionById('Blog-section')
-    // this.classList.add('bg-background');
+
 });
 
 
