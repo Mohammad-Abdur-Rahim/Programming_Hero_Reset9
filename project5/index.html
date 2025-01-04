@@ -35,16 +35,16 @@
         </nav>
         <!-- Button Section -->
         <div class="flex justify-center  space-x-20 pt-5 pb-5 bg-white">
-            <button class="bg-[#B4F461] text-black font-semibold py-2 px-6 rounded">
+            <button id="showDonateButton" class="bg-[#B4F461] text-black font-semibold py-2 px-6 rounded">
                 Donation
             </button>
-            <button id="" onclick="historyPage()" class="border border-gray-300 text-gray-700 font-semibold py-2 px-6 rounded">
+            <button id="showHistoryButton"  class="border border-gray-300 text-gray-700 font-semibold py-2 px-6 rounded">
                 History
             </button>
         </div>
     </header> <!-- header section start end ---------------------------------------------------------------->
     <main > <!-- main section start here -------------------------------------------------------------------->
-       <section class="space-y-10 pt-48">
+       <section id="donate-section" class="space-y-10 pt-48 ">
         <div><div id="transactionContainer"></div></div>
          <!-- Donate list 1  -->
          <div class="flex justify-center bg-white">
@@ -140,14 +140,8 @@
 
 
     </main><!-- main section end here -------------------------------------------------------------------->
-    <footer>
-        <section id="transaction_Container"   class="container grid grid-cols-1 place-items-center space-y-5 pb-5">
-            <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
-                <p   class="text-yellow-400 font-extrabold">No History Available</p>
-                
-            </div>
-            
-           
+    <footer id="history-section" class="hidden">
+        <section  id="transaction_Container" class="pt-48">
         </section>
     </footer>
     <script src="js/utilities.js"></script>

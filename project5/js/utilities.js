@@ -23,3 +23,44 @@ function getInputTextonly(id){
     return(value);
 }
 // Donate page function for Donate 1 ------------------------------------------END
+// toggle system create 
+
+
+function showSectionById(id){
+    //hide all first
+    document.getElementById('donate-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+  
+    // SHOW PROvided id section
+    document.getElementById(id).classList.remove('hidden');
+
+}
+document.getElementById('showDonateButton').addEventListener('click',function(){
+    console.log("added ");
+    showSectionById('donate-section')
+});
+
+document.getElementById('showHistoryButton').addEventListener('click',function(){
+    console.log("added ");
+    showSectionById('history-section')
+    // this.classList.add('bg-background');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,7 +20,7 @@
 const titledonate1 = getInputTextonly('titledonate1');
 const section = document.createElement('section');
 section.innerHTML =`
-           <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5">
+           <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
             <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
                 <p   class="text-yellow-400 font-extrabold">dontae1 ${donate1Value} and ${titledonate1}</p>
                 
@@ -35,13 +35,3 @@ document.getElementById('transaction_Container').appendChild(section);
 
 });
 
-// div.innerHTML = `
-// <div class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
-//     <p class="text-yellow-400 font-extrabold">${donate1Value} Taka ${titledonate1}</p>
-// </div>
-// `;
-
-// console.log(div);
-// console.log(titledonate1, donate1Value);
-// const test = document.getElementById('transactionContainer')
-// test.appendChild(div);
