@@ -1,16 +1,16 @@
 
-// page change on click
-function blogPage() {
-    window.location.href = '/Blog.html';
-}
-function goToHomepage() {
-    window.location.href = '/index.html'; 
-}
 // Donate page function for Donate 1 ------------------------------------------START
 function getInputValue(id){
     const value = document.getElementById(id).value;
     const numberValue = parseFloat(value);
-    return(numberValue);
+    if(numberValue >0 ){
+        return(numberValue);
+    }
+    else{
+        alert('Please enter a valid Number :')
+        return null;
+    }
+ 
 }
 function getInputText(id){
     const value = document.getElementById(id).innerText;
