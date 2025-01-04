@@ -18,7 +18,7 @@
         <nav class="flex justify-around items-center   py-6 bg-[#F9F7F3]">
             <!-- 1st -->
             <div>
-                <button id="blog" onclick="blogPage()" class="bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
+                <button id="blogButton" class="bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
                     Blog
                 </button>
             </div>
@@ -137,6 +137,39 @@
             </div>
         </div>
        </section>
+       <section id="Blog-Section" class="py-10 p-10 container mx-auto hidden">
+        <!-- Accordien Blog page  -->
+        <h1 class="text-3xl pl-3 pb-5 text-black font-bold mt-48">Important FAQ..... </h1>
+        <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium text-black">1. What is the Document Object mMde (DOM) ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">The Document Object Model (DOM) is a programming interface that represents the structure of a web page as a tree, allowing scripts to dynamically access and manipulate its elements and content.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow ">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-black">2. How do you select an element from the Dom ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">Use methods like getElementById(), querySelector(), getElementsByClassName(), or getElementsByTagName().</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow ">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-black">3. What is even delegation in the context of the DOM, and Why is it useful ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">Event delegation uses a parent element's listener to handle child events via event bubbling, saving resources and supporting dynamic elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow ">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-black">4. How do you manipulate an element's attributes and styles using thye Dom ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">Use setAttribute(), getAttribute(), removeAttribute() for attributes, style for inline styles, and classList for managing CSS classes.</p>
+            </div>
+          </div>
+          
+    </section>
 
 
     </main><!-- main section end here -------------------------------------------------------------------->
