@@ -12,13 +12,13 @@
 </head>
 
 <body class="bg-white">
-    <header class="container pb-10 fixed ">
+    <header class="  pb-10 fixed w-full ">
         <!-- header section start here --------------------------------------------------------------------->
         <!-- 1st  -->
-        <nav class="flex justify-around items-center   py-6 bg-[#F9F7F3]">
+        <nav class="flex justify-around items-center   py-6 bg-[#F9F7F3] flex-wrap">
             <!-- 1st -->
             <div>
-                <button id="showBlogButton"  class="bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
+                <button onclick="blogPage()"  class="bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
                     Blog
                 </button>
             </div>
@@ -34,6 +34,8 @@
             </div>
         </nav>
         <!-- Button Section -->
+       
+        
         <div class="flex justify-center  space-x-20 pt-5 pb-5 bg-white">
             <button id="showDonateButton" class="bgbtn text-black font-semibold py-2 px-6 rounded">
                 Donation
@@ -46,29 +48,30 @@
     <main > <!-- main section start here -------------------------------------------------------------------->
        <section id="donate-section" class="space-y-10 pt-48 ">
         <div><div id="transactionContainer"></div></div>
-         <!-- Donate list 1  -->
-         <div class="flex justify-center bg-white">
-            <div class="bg-white rounded-lg border p-6 max-w-7xl flex space-x-6">
-                <!-- Image Section 1st part ------>
-                <div class="flex-shrink-0">
-                    <img src="img/d11.png" alt="Flood image" class=" rounded-lg " />
-                </div>
 
-                <!-- Content Section  2nd part----->
-                <div class=" ">
+         <!-- Donate list 1  -->
+         <div class="flex justify-center bg-white w-full">
+            <div class="bg-white rounded-lg border p-6 max-w-7xl flex flex-col md:flex-row space-x-6">
+                <!-- Image Section 1st part ------>
+                <div class="flex-shrink-0 mb-4 md:mb-0 md:w-1/3">
+                    <img class="w-full max-w-full rounded-lg" src="img/d11.png" alt="Flood image" />
+                </div>
+        
+                <!-- Content Section 2nd part------>
+                <div class="order-2 md:order-1 md:w-2/3">
                     <div class="flex items-center space-x-2 text-gray-500 mb-2">
-                        <img src="img/coin.png" alt="coin icon">
+                        <img src="img/coin.png" alt="coin icon" />
                         <p id="plusDonat1" class="text-green-500 font-bold text-2xl">1200</p>
-                        <span class="text-black font-bold"> BDT</span>
+                        <span class="text-black font-bold">BDT</span>
                     </div>
                     <div>
                         <h2 id="titledonate1" class="text-2xl font-bold mb-3 text-black">Donate for Flood at Noakhali, Bangladesh</h2>
                     </div>
-                    <p  class="text-[#111111B3] text-justify font-serif leading-6 mb-4">
+                    <p class="text-[#111111B3] text-justify font-serif leading-6 mb-4">
                         The recent floods in Noakhali, Bangladesh, have severely impacted local communities, displacing thousands of people and causing extensive damage to homes, infrastructure, and farmland. The floodwaters have submerged large areas, leaving families without food, clean water, or shelter. Many people are also in urgent need of medical assistance due to waterborne diseases. Relief efforts are crucial to providing immediate aid, such as food, clean water, shelter, and medical supplies. Donations are needed to support rescue operations and recovery efforts. Your contributions can help alleviate the suffering of those affected and assist in rebuilding lives and communities.
                     </p>
                     <input id="donate1" type="text" placeholder="Write Donation Amount"
-                        class="w-full bg-white border border-slate-500 rounded-lg px-4 py-2 mb-4 text-gray-700 " />
+                        class="w-full bg-white border border-slate-500 rounded-lg px-4 py-2 mb-4 text-gray-700" />
                     <!-- Donate Now Button -->
                     <button id="donate1btn" class="w-full bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
                         Donate Now
@@ -76,100 +79,71 @@
                 </div>
             </div>
         </div>
-        <!-- Donate list 2  -->
-        <div class="flex justify-center bg-white">
-            <div class="bg-white rounded-lg border p-6 max-w-7xl flex space-x-6">
-                <!-- Image Section 1st part ------>
-                <div class="flex-shrink-0">
-                    <img src="img/d2.png" alt="Flood image" class=" rounded-lg " />
-                </div>
-
-                <!-- Content Section  2nd part----->
-                <div class="space-y-7 ">
-                    <div class="flex items-center space-x-2 text-gray-500 mb-2">
-                        <img src="img/coin.png" alt="coin icon">
-                        <p id="plusDonat2" class="text-green-500 font-bold text-2xl">600</p>
-                        <span class="text-black font-bold"> BDT</span>
-                    </div>
-                    <div>
-                        <h2 id="titledonate2" class="text-2xl font-bold mb-3 text-black">Donate for Flood Relief in Feni,Bangladesh</h2>
-                    </div>
-                    <p  class="text-[#111111B3] text-justify font-serif leading-6 mb-4">
-                        The recent floods in Feni, Bangladesh, have caused significant damage, leaving many residents stranded and without basic necessities. Floodwaters have inundated homes, roads, and agricultural lands, displacing families and affecting their livelihoods. Many individuals are in dire need of food, clean water, and medical supplies, while sanitation has become a critical issue. Relief efforts are essential to providing immediate assistance and supporting long-term recovery. Donations can help provide essential supplies, including food, clean water, temporary shelter, and medical aid, to those affected. Your support is crucial in helping the people of Feni rebuild their lives and communities
-                    </p>
-                    <input id="donate2" type="text" placeholder="Write Donation Amount"
-                        class="w-full bg-white border border-slate-500 rounded-lg px-4 py-2 mb-4 text-gray-700 " />
-                    <!-- Donate Now Button -->
-                    <button id="donate2btn" class="w-full bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
-                        Donate Now
-                    </button>
-                </div>
-            </div>
+        
+    <!-- Donate list 2 -->
+<div class="flex justify-center bg-white w-full">
+    <div class="bg-white rounded-lg border p-6 max-w-7xl flex flex-col md:flex-row space-x-6">
+        <!-- Image Section 1st part ------>
+        <div class="flex-shrink-0 mb-4 md:mb-0 md:w-1/3">
+            <img class="w-full max-w-full rounded-lg" src="img/d2.png" alt="Flood image" />
         </div>
-        <!-- Donate list 3  -->
-        <div class="flex justify-center bg-white">
-            <div class="bg-white rounded-lg border p-6 max-w-7xl flex space-x-6">
-                <!-- Image Section 1st part ------>
-                <div class="flex-shrink-0">
-                    <img src="img/d3.png" alt="Flood image" class=" rounded-lg " />
-                </div>
 
-                <!-- Content Section  2nd part----->
-                <div class="space-y-8 ">
-                    <div class="flex items-center space-x-2 text-gray-500 mb-2">
-                        <img src="img/coin.png" alt="coin icon">
-                        <p id="plusDonat3" class="text-green-500 font-bold text-2xl">2400</p>
-                        <span class="text-black font-bold"> BDT</span>
-                    </div>
-                    <div>
-                        <h2 id="titledonate3" class="text-2xl font-bold mb-3 text-black">Aid for Injured in the Quota Movement</h2>
-                    </div>
-                    <p  class="text-[#111111B3] text-justify font-serif leading-6 mb-4">
-                        The Quota Movement in Bangladesh has seen protests demanding reforms in the public recruitment system, leading to clashes between demonstrators and law enforcement. Many protesters have been injured, requiring urgent medical attention. These individuals need immediate aid, including medical supplies, treatment, and rehabilitation. Donations are crucial to providing necessary healthcare, medical kits, and support for the injured, ensuring they receive proper care. Your contribution will help ease their suffering and support the recovery of those who have been harmed during the protests, allowing them to heal physically and emotionally while advocating for their rights.
-                    </p>
-                    <input id="donate3" type="text" placeholder="Write Donation Amount"
-                        class="w-full bg-white border border-slate-500 rounded-lg px-4 py-2 mb-4 text-gray-700 " />
-                    <!-- Donate Now Button -->
-                    <button id="donate3btn" class="w-full bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
-                        Donate Now
-                    </button>
-                </div>
+        <!-- Content Section 2nd part------>
+        <div class="order-2 md:order-1 md:w-2/3">
+            <div class="flex items-center space-x-2 text-gray-500 mb-2">
+                <img src="img/coin.png" alt="coin icon">
+                <p id="plusDonat2" class="text-green-500 font-bold text-2xl">600</p>
+                <span class="text-black font-bold"> BDT</span>
             </div>
+            <div>
+                <h2 id="titledonate2" class="text-2xl font-bold mb-3 text-black">Donate for Flood Relief in Feni, Bangladesh</h2>
+            </div>
+            <p class="text-[#111111B3] text-justify font-serif leading-6 mb-4">
+                The recent floods in Feni, Bangladesh, have caused significant damage, leaving many residents stranded and without basic necessities. Floodwaters have inundated homes, roads, and agricultural lands, displacing families and affecting their livelihoods. Many individuals are in dire need of food, clean water, and medical supplies, while sanitation has become a critical issue. Relief efforts are essential to providing immediate assistance and supporting long-term recovery. Donations can help provide essential supplies, including food, clean water, temporary shelter, and medical aid, to those affected. Your support is crucial in helping the people of Feni rebuild their lives and communities.
+            </p>
+            <input id="donate2" type="text" placeholder="Write Donation Amount"
+                class="w-full bg-white border border-slate-500 rounded-lg px-4 py-2 mb-4 text-gray-700" />
+            <!-- Donate Now Button -->
+            <button id="donate2btn" class="w-full bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
+                Donate Now
+            </button>
         </div>
+    </div>
+</div>
+
+      <!-- Donate list 3 -->
+<div class="flex justify-center bg-white w-full">
+    <div class="bg-white rounded-lg border p-6 max-w-7xl flex flex-col md:flex-row space-x-6 flex-1">
+        <!-- Image Section 1st part ------>
+        <div class="flex-shrink-0 mb-4 md:mb-0 md:w-1/3">
+            <img class="w-full max-w-full rounded-lg" src="img/d3.png" alt="Flood image" />
+        </div>
+
+        <!-- Content Section 2nd part------>
+        <div class="space-y-8 order-2 md:order-1 md:w-2/3">
+            <div class="flex items-center space-x-2 text-gray-500 mb-2">
+                <img src="img/coin.png" alt="coin icon">
+                <p id="plusDonat3" class="text-green-500 font-bold text-2xl">2400</p>
+                <span class="text-black font-bold"> BDT</span>
+            </div>
+            <div>
+                <h2 id="titledonate3" class="text-2xl font-bold mb-3 text-black">Aid for Injured in the Quota Movement</h2>
+            </div>
+            <p class="text-[#111111B3] text-justify font-serif leading-6 mb-4">
+                The Quota Movement in Bangladesh has seen protests demanding reforms in the public recruitment system, leading to clashes between demonstrators and law enforcement. Many protesters have been injured, requiring urgent medical attention. These individuals need immediate aid, including medical supplies, treatment, and rehabilitation. Donations are crucial to providing necessary healthcare, medical kits, and support for the injured, ensuring they receive proper care. Your contribution will help ease their suffering and support the recovery of those who have been harmed during the protests, allowing them to heal physically and emotionally while advocating for their rights.
+            </p>
+            <input id="donate3" type="text" placeholder="Write Donation Amount"
+                class="w-full bg-white border border-slate-500 rounded-lg px-4 py-2 mb-4 text-gray-700" />
+            <!-- Donate Now Button -->
+            <button id="donate3btn" class="w-full bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
+                Donate Now
+            </button>
+        </div>
+    </div>
+</div>
+
        </section>
-<!-- Blog section  -->
-<section id="Blog-section" class="py-10 p-10 container mx-auto hidden pt-48">
-     <h1 class="text-3xl pl-3 pb-5 text-black font-bold">Important FAQ..... </h1>
-    <div class="collapse collapse-arrow">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium text-black">1. What is the Document Object mMde (DOM) ?</div>
-        <div class="collapse-content">
-          <p class="text-[#000000]">The Document Object Model (DOM) is a programming interface that represents the structure of a web page as a tree, allowing scripts to dynamically access and manipulate its elements and content.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow ">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-black">2. How do you select an element from the Dom ?</div>
-        <div class="collapse-content">
-          <p class="text-[#000000]">Use methods like getElementById(), querySelector(), getElementsByClassName(), or getElementsByTagName().</p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow ">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-black">3. What is even delegation in the context of the DOM, and Why is it useful ?</div>
-        <div class="collapse-content">
-          <p class="text-[#000000]">Event delegation uses a parent element's listener to handle child events via event bubbling, saving resources and supporting dynamic elements.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow ">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-black">4. How do you manipulate an element's attributes and styles using thye Dom ?</div>
-        <div class="collapse-content">
-          <p class="text-[#000000]">Use setAttribute(), getAttribute(), removeAttribute() for attributes, style for inline styles, and classList for managing CSS classes.</p>
-        </div>
-      </div>
-      
-</section>
+
 
     </main><!-- main section end here -------------------------------------------------------------------->
     <footer id="history-section" class="hidden">

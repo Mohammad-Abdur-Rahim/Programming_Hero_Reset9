@@ -1,34 +1,44 @@
 //Donate Section 1 -------------------------------------------------------------START
-// step: 1  value is receive 
+// step:1 ---------
 document.getElementById('donate1btn').addEventListener('click', function (e) {
     const donate1Value = getInputValue('donate1');
     console.log('donate 1 is :', donate1Value);
-    // step: 2  add donate + and - main bvalance---
+
+    // Step 2: Add donate + and - to main balance
     const plusDonat1 = getInputText('plusDonat1');
     console.log('plusDonat1 old value is :', plusDonat1);
     const plusDonat1UpdateValue = plusDonat1 + donate1Value;
     console.log('plusDonat1UpdateValue is :', plusDonat1UpdateValue);
     document.getElementById('plusDonat1').innerText = plusDonat1UpdateValue;
 
-    // step: 3 Main Balance  - Calculation --------------------
+    // Step 3: Main Balance - Calculation
     const mainBalance = getInputText('mainBalance');
     console.log('mainBalance is :', mainBalance);
     const mainBalanceUpdateValue = mainBalance - donate1Value;
     document.getElementById('mainBalance').innerText = mainBalanceUpdateValue;
-    // step: 4 Transaction History 
+
+    // Step 4: Transaction History
     const titledonate1 = getInputTextonly('titledonate1');
+    
+    // current date and time
+    const currentDateTime = new Date().toLocaleString();
+  
     const section = document.createElement('section');
     section.innerHTML = `
-           <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
-            <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
-                <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">1.</span> ${donate1Value} Taka is ${titledonate1}</p>
+        <section class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
+            <div class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
+                <p class="text-black font-bold">
+                    <span class="text-red-500 font-extrabold text-xl">1.</span> 
+                    ${donate1Value} Taka for ${titledonate1}
+                </p>
+                <p class="text-gray-500 font-medium">Date and Time: ${currentDateTime}</p> 
             </div>
-  
         </section>`;
     document.getElementById('transaction_Container').appendChild(section);
-    
-    alert(`Warring you Donate Money is : ${donate1Value} Taka`)
+
+    alert(`Donate: ${donate1Value} Taka. Warning, please check: ${currentDateTime}`);
 });
+
 
 //Donate Section 1 -------------------------------------------------------------END
 //Donate Section 2 -------------------------------------------------------------START
@@ -45,18 +55,21 @@ document.getElementById('donate2btn').addEventListener('click', function (e) {
     document.getElementById('mainBalance').innerText = mainBalanceUpdateValue;
     // step: 4 Transaction History 
     const titledonate2 = getInputTextonly('titledonate2');
+        // current date and time
+        const currentDateTime = new Date().toLocaleString();
     const section = document.createElement('section');
     section.innerHTML = `
                <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
                 <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
                     <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">2.</span> ${donate2Value} Taka is ${titledonate2}</p>
-                    
+                     <p class="text-gray-500 font-medium">Date and Time: ${currentDateTime}</p>
                 </div>
                 
                
             </section>`;
 
     document.getElementById('transaction_Container').appendChild(section);
+    alert(`Donate : ${donate2Value} Taka. Warning please check:`)
 });
 //Donate Section 2 -------------------------------------------------------------END
 //Donate Section 3 -------------------------------------------------------------START
@@ -73,17 +86,20 @@ document.getElementById('donate3btn').addEventListener('click', function (e) {
     document.getElementById('mainBalance').innerText = mainBalanceUpdateValue;
     // step: 4 Transaction History 
     const titledonate3 = getInputTextonly('titledonate3');
+        // current date and time
+        const currentDateTime = new Date().toLocaleString();
     const section = document.createElement('section');
     section.innerHTML = `
            <section    class="container grid grid-cols-1 place-items-center space-y-5 pb-5 ">
             <div  class="bg-white rounded-lg border p-6 space-x-6 w-10/12">
                 <p   class="text-black font-bold"><span class="text-red-500 font-extrabold text-xl">3.</span> ${donate3Value} Taka is ${titledonate3}</p>
-                
+                 <p class="text-gray-500 font-medium">Date and Time: ${currentDateTime}</p>
             </div>
             
            
         </section>`;
 
     document.getElementById('transaction_Container').appendChild(section);
+    alert(`Donate : ${donate3Value} Taka. Warning please check:`)
 });
 //Donate Section 3 -------------------------------------------------------------END

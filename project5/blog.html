@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- Tailwind & Daisy Ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    
+
+    <header class="w-full ">
+        <!-- header section start here --------------------------------------------------------------------->
+        <!-- 1st  -->
+        <nav class="flex justify-around items-center  py-6 bg-[#F9F7F3] flex-wrap">
+            <!-- 1st -->
+            <div>
+                <button id="home" onclick="goToHomepage()" class="bg-[#B4F461] text-black font-semibold py-2 px-4 rounded">
+                    Home
+                </button>
+            </div>
+            <!-- 2nd -->
+            <div class="flex items-center space-x-2">
+                <img src="img/header.png" alt="donation icon">
+                <span class=" font-medium text-black text-2xl">Donate Bangladesh</span>
+            </div>
+            <!-- 3rd -->
+            <div class="flex items-center space-x-2">
+                <img src="img/coin.png" alt="coin icon">
+                <span class="text-black font-medium">5500 BDT</span>
+            </div>
+        </nav>
+    </header> <!-- header section start end -->
+<main>
+    <section class="py-10 p-10 container mx-auto">
+        <!-- Accordio  -->
+         <h1 class="text-3xl pl-3 pb-5 text-black font-bold">Important FAQ..... </h1>
+        <div class="collapse collapse-arrow pb-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium text-black">1. What is the Document Object mMde (DOM) ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">The Document Object Model (DOM) is a programming interface that represents the structure of a web page as a tree, allowing scripts to dynamically access and manipulate its elements and content.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow ">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-black">2. How do you select an element from the Dom ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">Use methods like getElementById(), querySelector(), getElementsByClassName(), or getElementsByTagName().</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow pb-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-black">3. What is even delegation in the context of the DOM, and Why is it useful ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">Event delegation uses a parent element's listener to handle child events via event bubbling, saving resources and supporting dynamic elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow pb-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-black">4. How do you manipulate an element's attributes and styles using thye Dom ?</div>
+            <div class="collapse-content">
+              <p class="text-[#000000]">Use setAttribute(), getAttribute(), removeAttribute() for attributes, style for inline styles, and classList for managing CSS classes.</p>
+            </div>
+          </div>
+          
+    </section>
+</main>
+
+<script src="js/utilities.js"></script>
+<script src="js/donate.js"></script>
+</body>
+</html>

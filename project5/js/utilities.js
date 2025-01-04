@@ -1,4 +1,10 @@
-
+// Page link
+function blogPage() {
+    window.location.href = '/Blog.html';
+}
+function goToHomepage() {
+    window.location.href = '/index.html'; // Replace with your homepage URL
+}
 // Donate page function for Donate 1 ------------------------------------------START
 function getInputValue(id){
     const value = document.getElementById(id).value;
@@ -31,7 +37,7 @@ function showSectionById(id){
     //hide all first
     document.getElementById('donate-section').classList.add('hidden');
     document.getElementById('history-section').classList.add('hidden');
-    document.getElementById('Blog-section').classList.add('hidden');
+
   
     // SHOW PROvided id section
     document.getElementById(id).classList.remove('hidden');
@@ -51,11 +57,7 @@ document.getElementById('showHistoryButton').addEventListener('click',function()
     document.getElementById('showDonateButton').classList.remove('bgbtn');
  
 });
-document.getElementById('showBlogButton').addEventListener('click',function(){
-    console.log("added ");
-    showSectionById('Blog-section')
-
-});
+;
 
 
 
