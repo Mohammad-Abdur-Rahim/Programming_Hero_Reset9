@@ -36,7 +36,7 @@ document.getElementById('donate1btn').addEventListener('click', function (e) {
         </section>`;
     document.getElementById('transaction_Container').appendChild(section);
 
-    alert(`Donate: ${donate1Value} Taka. Warning, please check: ${currentDateTime}`);
+    alert(`Donate: ${donate1Value} Taka. Warning, please check---`);
 });
 
 
