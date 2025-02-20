@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co.com/gZ0rYZwM/sakib.jpg",
+    "name": "Shakib Al HAsan ",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 90000
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co.com/BH0C6d5m/musi.jpg",
+    "name": "Musfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicket-Keeper",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 70000
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co.com/0RGM9244/kkkk.jpg",
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 200000
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co.com/GvkvhMkb/mas.jpg",
+    "name": "Mashrafe Bin Mortaza",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 80000
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co.com/KpQj9DY1/tttttt.jpg",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 90000
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co.com/PGjxwTSt/riad.jpg",
+    "name": "Mahamudullah Riad",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 60000
+  },
+  {
+    "id": 7,
+    "picture": "https://i.ibb.co.com/xtXb1jz9/david.jpg",
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 300000
+  }
+]
