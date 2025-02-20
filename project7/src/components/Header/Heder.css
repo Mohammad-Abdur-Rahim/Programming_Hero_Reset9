@@ -1,0 +1,30 @@
+.bg_container {
+  background-image: url("../../assets/img/bg-shadow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+.borderAdd {
+  border: solid 1px yellow;
+  padding: 15px 5px 18px 5px;
+  border-radius: 10px;
+
+}
+
+.mtClass {
+  margin-top: -250px;
+}
+.active{
+  background-color: #E7FE29;
+  font-size: 18px;
+  border: none;
+  color: black;
+}
+.btnStyle{
+  background-color: white;
+  color:black;
+  font-size: 18px;
+}
