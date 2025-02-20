@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- daisy ui link  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Project 6</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="flex justify-between w-11/12 mx-auto py-5 items-center">
+        <div class="flex gap-2"><img src="images/logo.webp" alt="">
+          <p class="font-bold text-xl">Peddy</p>
+        </div>
+        <div>
+          <ul class=" flex gap-9">
+            <li><a>Home</a></li>
+            <li><a>Shop </a></li>
+            <li><a>Contact </a></li>
+          </ul>
+        </div>
+        <div><img src="https://img.icons8.com/?size=48&id=81140&format=png" alt=""></div>
+      </div>
+    </nav>
+    <!-- hero section  -->
+    <section>
+      <div class="hero  min-h-[400px]">
+        <div class="hero-content text-center">
+          <div>
+            <p class=" text-[#13131399] font-bold text-xl">Bringing Families Together ❤️‍🔥
+            </p>
+            <h1 class=" text-3xl md:text-6xl font-bold py-8">Your Path to Adoption <br> Starts Here</h1>
+            <p class="py-6 w-full ">
+              It is a long established fact that a reader will be distracted by the readable content of a
+              page when looking <br>at its layout. The point of using Lorem Ipsum is that it has a.
+            </p>
+            <button class="btn bg-[#0E7A81] text-white text-xl">View More</button>
+            <img class="w-full mt-5" src="images/dog.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+
+    <section class="text-center py-20">
+      <h1 class="text-3xl md:text-6xl font-bold py-4">Adopt Your Best Friend</h1>
+      <p class="w-10/12 md:w-8/12 mx-auto text-gray-600">
+        "Adopt Your Best Friend" is more than just a call to action — it’s an opportunity to transform both your life
+        and the life of a loving animal. Whether you're adopting a playful pup or a cuddly kitten, you’re not just
+        gaining a pet — you’re gaining a lifelong best friend.
+      </p>
+    </section>
+    <section class="py-5 w-11/12 mx-auto">
+      <div id="categories" class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4  justify-items-center">
+
+      </div>
+      <div class="flex justify-between pt-14">
+        <h2 class="text-xl font-bold">Best Deal For You</h2>
+        <button id="sortFilter" onclick="loadAllPets()" class="btn bg-[#0E7A81] text-white text-xl">Sort By Price</button>
+      </div>
+    </section>
+    <!-- all pets information  ------------------------------------>
+    <section class="w-11/12 flex mx-auto  gap-5 mb-5">
+      <div id="allPets"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6 w-full md:w-3/4 border border-slate-300 rounded-lg">
+
+      </div>
+      <div id="imgContainer"
+        class="grid grid-cols-2 gap-3 border border-slate-300 h-full w-[100px] md:w-1/4 rounded-lg ">
+
+      </div>
+    </section>
+
+    <!-- Open the modal using ID.showModal() method  ---------------------------------------------------- -->
+    <button class="btn hidden " onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle ">
+      <div class="modal-box w-full">
+        <div id="modalContent">
+
+        </div>
+        <div class="modal-action">
+          <div>
+          </div>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <button class="btn hidden" onclick="openCountdownModal()">Open Countdown Modal</button>
+
+    <!-- Modal countdown ----------------------------------------------------------------------------------------------------------->
+
+    <dialog id="countdownModal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box w-full sm:w-1/2">
+        <div class="text-center mx-auto ">
+          <img class="flex justify-center mx-auto"
+            src="https://cdn-icons-png.freepik.com/256/6427/6427248.png?ga=GA1.1.1443382482.1735662214&semt=ais_hybrid"
+            alt="">
+
+          <p class="mt-4">Adoption Process is Start For Your Pet</p>
+          <span id="countdownTimer" class="text-red-500 text-5xl font-bold">3</span>
+        </div>
+        <!-- Modal Action -->
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- Close Button -->
+            <button onclick="clearCountdown()"></button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- modal end here -------------------------------------------------------------------------------------- -->
+    <!-- Loader ------------------------------------------------------------------------------------------------->
+    <div id="loader" class="flex justify-center items-center min-h-[300px]">
+      <span class="loading loading-bars loading-lg"></span>
+      <span class="loading loading-bars loading-lg"></span>
+    </div>
+    <!-- Loader ---------------------------------------------------------------------------------------------------->
+  </main>
+  <footer class="bg-black text-white py-20">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 w-10/12">
+      <!-- Company Info -->
+      <div>
+        <h6 class="text-2xl font-bold flex items-center mb-4">
+          <img src="images/logo.webp" alt=""> Peddy
+        </h6>
+        <div class="text-[#ffffff99]">
+          <p class="mb-2">Location: av. Washington 165, NY CA 54003</p>
+          <p class="mb-2">Phone: +31 85 964 47 25</p>
+          <p class="mb-2">Email: info@yourdomain.com</p>
+          <p class="mb-4">Opening hours: 9.00 AM - 5.00 PM</p>
+        </div>
+        <img src="images/Frame 30.png" alt="">
+      </div>
+
+      <!-- Useful Links -->
+      <div class="pl-0 md:pl-10">
+        <h6 class="text-xl font-bold mb-4">Useful Links</h6>
+        <ul class="space-y-2 text-[#ffffff99]">
+          <li><a href="#" class="hover:text-teal-400">Home</a></li>
+          <li><a href="#" class="hover:text-teal-400">About Us</a></li>
+          <li><a href="#" class="hover:text-teal-400">Animals</a></li>
+          <li><a href="#" class="hover:text-teal-400">Foundation</a></li>
+          <li><a href="#" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Subscribe Form -->
+      <div>
+        <h6 class="text-xl font-bold mb-4">Drop a Message</h6>
+        <form action="#" class="space-y-4">
+          <input type="email" placeholder="Enter your email"
+            class="w-[280px] p-2 rounded bg-[#13131399] text-white border border-gray-700 focus:outline-none focus:ring focus:ring-teal-400" />
+          <button type="submit" class="w-[280px] font-bold bg-teal-500 text-white py-2 rounded hover:bg-teal-400">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
