@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Link from "./Link";
+import { HiMenuAlt2  } from "react-icons/hi";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const CustomNav = () => {
+  const [open, setOpen] = useState(false);
   const routes = [
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About", path: "/about" },
@@ -9,11 +13,15 @@ const CustomNav = () => {
     { id: 5, name: "Dashboard", path: "/dashboard" },
   ];
 
-  console.log(routes);
-
   return (
     <div>
       <nav>
+        <div onClick={()=> setOpen(!open)} className="md:hidden">
+            {
+                open === true ? <IoMdCloseCircle className="text-4xl"></IoMdCloseCircle>:<HiMenuAlt2 className="text-4xl"> </HiMenuAlt2>
+            }
+          
+        </div>
         <ul className="md:flex">
           {routes.map((route) => (
             <Link key={route.id} route={route}></Link>
