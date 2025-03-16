@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 const Phone = () => {
@@ -6,20 +7,13 @@ const Phone = () => {
 useEffect(()=>{
 
 
-    fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
-    .then(res => res.json())
-    .then(data => setPhone(data.data))
-
-
-
-
-
-
+    axios.get('https://openapi.programming-hero.com/api/phones?search=iphone')
+    .then(data =>setPhone(data.data.data))
 
 
 
     
-},[])
+},[]);
 
     return (
         <div>
