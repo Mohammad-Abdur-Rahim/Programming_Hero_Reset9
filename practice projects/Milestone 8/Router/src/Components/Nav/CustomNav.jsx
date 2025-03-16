@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "./Link";
-import { HiMenuAlt2  } from "react-icons/hi";
+import { HiMenuAlt2 } from "react-icons/hi";
 import { IoMdCloseCircle } from "react-icons/io";
 
 const CustomNav = () => {
@@ -14,16 +14,21 @@ const CustomNav = () => {
   ];
 
   return (
-    <div>
+    <div className="p-5">
       <nav>
-        <div onClick={()=> setOpen(!open)} className="md:hidden">
-            {
-                open === true ? <IoMdCloseCircle className="text-4xl"></IoMdCloseCircle>:<HiMenuAlt2 className="text-4xl"> </HiMenuAlt2>
-            }
-          
+        <div onClick={() => setOpen(!open)} className="md:hidden">
+          {open === true ? (
+            <IoMdCloseCircle className="text-4xl"></IoMdCloseCircle>
+          ) : (
+            <HiMenuAlt2 className="text-4xl"> </HiMenuAlt2>
+          )}
         </div>
-                                                  {/* option --1${open?'':'hidden' */}
-        <ul className={`md:flex absolute md:static duration-700 ${open?'top-12':'-top-60'}`}>
+        {/* option --1${open?'':'hidden' */}
+        <ul
+          className={`md:flex absolute md:static duration-700 ${
+            open ? "top-12" : "-top-60"
+          }`}
+        >
           {routes.map((route) => (
             <Link key={route.id} route={route}></Link>
           ))}
