@@ -22,7 +22,8 @@ const CustomNav = () => {
             }
           
         </div>
-        <ul className="md:flex">
+                                                  {/* option --1${open?'':'hidden' */}
+        <ul className={`md:flex absolute md:static duration-700 ${open?'top-12':'-top-60'}`}>
           {routes.map((route) => (
             <Link key={route.id} route={route}></Link>
           ))}
