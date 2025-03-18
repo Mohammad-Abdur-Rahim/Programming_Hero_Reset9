@@ -1,5 +1,9 @@
 .user{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 20px;
+}
+.user img {
+    width: 400px;
+    height: 400px;
 }
