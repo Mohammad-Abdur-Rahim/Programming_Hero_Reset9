@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 const Post = ({postData}) => {
+   
     const navigate = useNavigate();
     const handleShowDetails = ()=>{
         navigate(`/post/${id}`);
