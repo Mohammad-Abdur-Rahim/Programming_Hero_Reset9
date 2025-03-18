@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const UserOutput = ({user}) => {
@@ -13,6 +14,7 @@ boderRadius : "10px"
             <p>{name}</p>
             <p>{email}</p>
             <p>{phone}</p>
+           <Link to={`/userDetails/${id}`}>Show Details</Link>
         </div>
     );
 };
