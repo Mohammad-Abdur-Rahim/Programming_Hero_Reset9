@@ -14,7 +14,7 @@ boderRadius : "10px"
             <p>{name}</p>
             <p>{email}</p>
             <p>{phone}</p>
-           <Link to={`/userDetails/${id}`}>Show Details</Link>
+           <Link to={`/userDetails/${id}`}> Details</Link>
         </div>
     );
 };
