@@ -1,3 +1,9 @@
 nav a {
     margin-left: 15px;
 }
+nav  a.active {
+    color: white;
+    padding: 5px;
+    background-color: rgb(218, 30, 30);
+    border-radius: 15%;
+  }
