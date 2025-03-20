@@ -3,11 +3,13 @@ import { useState } from "react";
 const useInputState = (defaultValue = null) => {
   const [value, setValue] = useState(defaultValue);
 
-  const handleChange = (e) => {
+  const onChange = (e) => {
     setValue(e.target.value);
   };
-
-  // custom hook return Array type  ---------
-  return [value, handleChange];
+  // custom hook return Object type  ---------
+  return {
+    value,
+    onChange,
+  };
 };
 export default useInputState;
