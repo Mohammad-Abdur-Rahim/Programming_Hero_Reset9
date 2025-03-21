@@ -1,4 +1,4 @@
-const ReuseableForm = ({ formTitle, submitBtn, handleSubmit ,children }) => {
+const ReuseableForm = ({  submitBtn, handleSubmit ,children }) => {
   const localSubmitData = (e) => {
     e.preventDefault();
     // Object Data Receive
