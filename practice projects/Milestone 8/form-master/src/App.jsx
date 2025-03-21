@@ -8,10 +8,10 @@ import StateFullForm from "./components/StateFullForm";
 function App() {
   const handleSingUpSubmit = (data) => {
     console.log("singUp : ", data);
-  }
+  };
   const handleUpdate = (data) => {
     console.log("Update : ", data);
-  }
+  };
 
   return (
     <>
@@ -23,12 +23,22 @@ function App() {
       <ReuseableForm
         formTitle={"Sing Up"}
         handleSubmit={handleSingUpSubmit}
-      ></ReuseableForm>
+      >
+        <div>
+          <h2>Sing Up Form</h2>
+          <p>Plesae Create account Fisrt</p>
+        </div>
+      </ReuseableForm>
       <ReuseableForm
         formTitle={"Profile Update"}
         submitBtn="Update"
         handleSubmit={handleUpdate}
-      ></ReuseableForm>
+      >
+         <div>
+          <h2>Update Form</h2>
+          <p>Profile Update always</p>
+        </div>
+      </ReuseableForm>
     </>
   );
 }

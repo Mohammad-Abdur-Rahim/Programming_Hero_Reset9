@@ -1,4 +1,4 @@
-const ReuseableForm = ({ formTitle, submitBtn, handleSubmit }) => {
+const ReuseableForm = ({ formTitle, submitBtn, handleSubmit ,children }) => {
   const localSubmitData = (e) => {
     e.preventDefault();
     // Object Data Receive
@@ -11,7 +11,7 @@ const ReuseableForm = ({ formTitle, submitBtn, handleSubmit }) => {
   };
   return (
     <div>
-      <h2>{formTitle}</h2>
+      {children}
       <form onSubmit={localSubmitData}>
         <input type="text" name="name" /> <br />
         <input type="email" name="email" id="" /> <br />
