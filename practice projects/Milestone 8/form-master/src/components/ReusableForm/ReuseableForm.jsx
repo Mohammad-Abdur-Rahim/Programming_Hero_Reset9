@@ -1,16 +1,14 @@
 
-const ReuseableForm = ({formTitle }) => {
-    const handleSubmit =(e)=>{
-        e.preventDefault()
-    }
+const ReuseableForm = ({formTitle ,submitBtn ,handleSubmit }) => {
+   
     return (
         <div>
             <h2>{formTitle}</h2>
              <form onSubmit={handleSubmit}>
         <input type="text" name="name" /> <br />
         <input type="email" name="email" id="" /> <br />
-        <input type="phone" name="phone" id="" /> <br />
-        <input type="submit" value="Submit" />
+        <input type="password" name="password" id="" /> <br />
+        <input type="submit" value={submitBtn} />
       </form>
         </div>
     );
