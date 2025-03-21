@@ -6,12 +6,12 @@ import SimpleForm from "./components/SimpleForm";
 import StateFullForm from "./components/StateFullForm";
 
 function App() {
-  const handleSingUpSubmit = (e) => {
-    e.preventDefault();
-  };
-  const handleUpdate = (e) => {
-    e.preventDefault();
-  };
+  const handleSingUpSubmit = (data) => {
+    console.log("singUp : ", data);
+  }
+  const handleUpdate = (data) => {
+    console.log("Update : ", data);
+  }
 
   return (
     <>
@@ -22,12 +22,12 @@ function App() {
       {/* <HookForm></HookForm> */}
       <ReuseableForm
         formTitle={"Sing Up"}
-        handleSingUpSubmit={handleSingUpSubmit}
+        handleSubmit={handleSingUpSubmit}
       ></ReuseableForm>
       <ReuseableForm
         formTitle={"Profile Update"}
         submitBtn="Update"
-        handleUpdate={handleUpdate}
+        handleSubmit={handleUpdate}
       ></ReuseableForm>
     </>
   );
