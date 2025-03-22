@@ -7,20 +7,19 @@ const Nav = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-      <NavLink to="/listed-book">Listed Book</NavLink>
+        <NavLink to="/listed-book">Listed Book</NavLink>
       </li>
       <li>
-      <NavLink to="/pageto-read">Page To Read</NavLink>
+        <NavLink to="/pageto-read">Page To Read</NavLink>
       </li>
       <li>
-      <NavLink to="/dashboard">Dashboard</NavLink>
-        
+        <NavLink to="/dashboard">Dashboard</NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar ">
-      <div className="navbar-start">
+    <div className="navbar font-sans  ">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -46,12 +45,12 @@ const Nav = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-4xl">Book Vibe</a>
+        <a className=" text-2xl lg:text-4xl font-semibold ">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal px-1 text-xl">{links}</ul>
       </div>
-      <div className="navbar-end gap-4  ">
+      <div className="navbar-end gap-4 hidden lg:flex ">
         <a className="btn btn-success font-bold  text-xl">Sing In</a>
         <a className="btn btn-info font-bold text-xl">Sing Up</a>
       </div>
